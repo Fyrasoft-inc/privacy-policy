@@ -29,13 +29,18 @@
                     <div id="alertMessage" class="alert"></div>
 
                     <div class="form-group">
-                        <label for="phoneNumber" class="form-label">Phone Number (with Country Code)</label>
-                        <input type="tel" id="phoneNumber" class="form-input" placeholder="+91 9876543210" required>
+                        <label for="email" class="form-label">Email ID</label>
+                        <input type="email" id="email" class="form-input" placeholder="your.email@example.com" required>
                     </div>
 
                     <div class="form-group">
                         <label for="reason" class="form-label">Reason for Deletion (Optional)</label>
                         <textarea id="reason" class="form-input" rows="4" placeholder="Please let us know why you are leaving..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmText" class="form-label">Type "delete my account" to confirm</label>
+                        <input type="text" id="confirmText" class="form-input" placeholder="delete my account" required>
                     </div>
 
                     <button type="submit" class="delete-btn" id="submitBtn">Request Deletion</button>

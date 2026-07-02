@@ -13,11 +13,17 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
             
-            const phoneNumber = document.getElementById('phoneNumber').value;
+            const email = document.getElementById('email').value;
+            const confirmText = document.getElementById('confirmText').value;
             
             // Basic validation
-            if (!phoneNumber || phoneNumber.trim() === '') {
-                showAlert('Please enter your phone number.', 'error');
+            if (!email || email.trim() === '') {
+                showAlert('Please enter your Email ID.', 'error');
+                return;
+            }
+
+            if (confirmText.trim().toLowerCase() !== 'delete my account') {
+                showAlert('Please type "delete my account" to confirm.', 'error');
                 return;
             }
 
