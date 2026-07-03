@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion - Sripuram ONE</title>
+    <meta name="description" content="Request Account Deletion for Sripuram ONE Mobile Application">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1>Sripuram ONE</h1>
+        <a href="privacy-policy.html" style="color: white; text-decoration: none; font-size: 0.9rem; border: 1px solid white; padding: 0.4rem 0.8rem; border-radius: 4px; transition: all 0.3s;" onmouseover="this.style.background='white'; this.style.color='var(--primary)';" onmouseout="this.style.background='transparent'; this.style.color='white';">Privacy Policy</a>
+    </nav>
+
+    <div class="container">
+        <h2>Request Account Deletion</h2>
+        
+        <p>If you no longer wish to use the Sripuram ONE application, you can request to have your account and associated data deleted.</p>
+        
+        <div class="alert alert-danger">
+            <strong>Warning:</strong> Deleting your account is a permanent action. You will lose access to your profile, saved details, booking history, and all associated data within the Sripuram ONE ecosystem. It may take up to 30 days for all data to be permanently erased from our backups.
+        </div>
+
+        <p>Please fill out the form below to initiate the account deletion process.</p>
+
+        <form id="deletionForm">
+            <div id="alertBox" class="alert"></div>
+
+            <div class="form-group">
+                <label for="email">Registered Email Address or Phone Number</label>
+                <input type="text" id="email" class="form-control" placeholder="Enter your registered email or phone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="reason">Reason for Deletion (Optional)</label>
+                <textarea id="reason" class="form-control" rows="4" placeholder="Please let us know why you are leaving..."></textarea>
+            </div>
+
+            <div class="form-group" style="display: flex; align-items: flex-start; gap: 0.5rem;">
+                <input type="checkbox" id="confirm" required style="margin-top: 0.3rem;">
+                <label for="confirm" style="font-weight: 400; font-size: 0.9rem; margin-bottom: 0;">I understand that this action is irreversible and I will lose all access to my account.</label>
+            </div>
+
+            <button type="submit" class="btn btn-danger" id="submitBtn">Submit Deletion Request</button>
+        </form>
+
+        <h3 style="margin-top: 2.5rem; font-size: 1.2rem;">Alternatively, Delete in the App</h3>
+        <p>You can also delete your account instantly from within the Sripuram ONE mobile app by navigating to: <br><strong>Profile &rarr; Settings &rarr; Delete Sripuram ONE account</strong>.</p>
+    </div>
+
+    <footer>
+        &copy; 2026 Sripuram ONE. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
